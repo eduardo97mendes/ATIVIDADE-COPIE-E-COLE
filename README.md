@@ -1,7 +1,7 @@
 # 🚀 Atividade Prática 01: Desenvolvimento Web & GitHub
 
 Seja bem-vindo(a) à primeira atividade prática! Neste exercício, você vai organizar suas pastas de projeto no servidor local, criar seus arquivos de código HTML e CSS, ler e preencher as lacunas solicitadas e, ao final, publicar tudo no seu perfil do GitHub mencionando o professor.
-
+14-09-2026
 ---
 
 ## 📌 Passo a Passo de Execução
