@@ -1,0 +1,32 @@
+/* ==========================================================================
+   ENTENDENDO ATRIBUTOS BOOLEANOS NO CSS (input[required], etc.)
+   ==========================================================================
+   1. O QUE É UM ATRIBUTO BOOLEANO NO HTML?
+   São atributos de 'verdadeiro/falso' que funcionam pela presença ou ausência:
+   - Presente no HTML: <input required>  -> O navegador entende como VERDADEIRO.
+   - Ausente no HTML:  <input>           -> O navegador entende como FALSO.
+
+   2. COMO O CSS SELECIONA ESSES CAMPOS?
+   Usamos a sintaxe de colchetes [nome-do-atributo] para estilizar apenas 
+   os elementos que têm essa marcação ativa.
+
+   3. PRINCIPAIS ATRIBUTOS BOOLEANOS DE FORMULÁRIO NO HTML:
+
+   - required : Torna o preenchimento OBRIGATÓRIO. O formulário não é enviado 
+                se o campo estiver vazio.
+                Ex no CSS: input[required] { border-left: 4px solid #ef4444; }
+
+   - disabled : BLOQUEIA / DESATIVA o campo. O usuário não consegue clicar 
+                nem digitar, e o valor é ignorado no envio.
+                Ex no CSS: input[disabled] { opacity: 0.5; cursor: not-allowed; }
+
+   - checked  : Deixa seletores do tipo RADIO ou CHECKBOX marcados por padrão.
+                Ex no CSS: input[type="checkbox"]:checked { accent-color: #2563eb; }
+
+   - readonly : Deixa o campo APENAS PARA LEITURA. O usuário consegue selecionar 
+                e copiar o texto, mas não pode alterar o valor.
+                Ex no CSS: input[readonly] { background-color: #f1f5f9; }
+
+   - autofocus: FOCA automaticamente o cursor no campo assim que a página carrega.
+                Ex no CSS: input[autofocus] { outline: 2px solid #2563eb; }
+   ========================================================================== */

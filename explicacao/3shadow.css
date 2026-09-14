@@ -1,0 +1,37 @@
+/* ==========================================================================
+   ENTENDENDO A PROPRIEDADE BOX-SHADOW NO CSS (Sombra em Caixas)
+   ==========================================================================
+   SINTAXE: box-shadow: Eixo-X  Eixo-Y  Desfoque  Espalhamento  Cor;
+   EXEMPLO: box-shadow: 30px   -30px    40px      10px         rgba(6, 6, 6, 0.5);
+
+   1. PRIMEIRO VALOR ( 30px ) -> EIXO X (Deslocamento Horizontal):
+      - Valores POSITIVOS empurram a sombra para a DIREITA.
+      - Valores NEGATIVOS empurram a sombra para a ESQUERDA.
+      - 0 centraliza a sombra horizontalmente.
+
+   2. SEGUNDO VALOR ( -30px ) -> EIXO Y (Deslocamento Vertical):
+      - Valores POSITIVOS empurram a sombra para BAIXO.
+      - Valores NEGATIVOS empurram a sombra para CIMA (como neste exemplo).
+      - 0 centraliza a sombra verticalmente.
+
+   3. TERCEIRO VALOR ( 40px ) -> BLUR RADIUS (Nível de Desfoque):
+      - Quanto MAIOR o número, mais esfumaçada/suave fica a sombra.
+      - Se for 0, a sombra fica com bordas totalmente duras (marcadas).
+
+   4. QUARTO VALOR ( 10px ) -> SPREAD RADIUS (Espalhamento):
+      - Expande ou encolhe o tamanho total da sombra.
+      - Valores POSITIVOS fazem a sombra crescer além do tamanho da caixa.
+
+   5. QUINTO VALOR ( rgba(6, 6, 6, 0.5) ) -> COR E TRANSPARÊNCIA:
+      - rgb(6, 6, 6) define o tom da cor (um cinza bem escuro quase preto).
+      - O parâmetro 'a' (Alpha) define a TRANSPARÊNCIA de 0 a 1:
+        * 1 = 100% opaco (sombra sólida/escura).
+        * 0.5 = 50% de transparência (deixa o fundo semi-transparente).
+        * 0.1 = 10% de transparência (sombra leve e sutil).
+
+   DICA DE USO EM SALA:
+   - Para sombras realistas e elegantes, use deslocamentos baixos e pouca opacidade:
+     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+   - Para remover a sombra totalmente, use:
+     box-shadow: none;
+   ========================================================================== */

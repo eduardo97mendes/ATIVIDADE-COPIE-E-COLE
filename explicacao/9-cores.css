@@ -1,0 +1,30 @@
+/* ==========================================================================
+   ENTENDENDO O SISTEMA DE CORES RGB E RGBA NO CSS
+   ==========================================================================
+   SINTAXE: rgb(Vermelho, Verde, Azul)
+   SINTAXE COM TRANSPARÊNCIA: rgba(Vermelho, Verde, Azul, Opacidade)
+
+   RGB significa Red (Vermelho), Green (Verde) e Blue (Azul). É o modelo de 
+   mistura de luzes primárias utilizado por telas de computadores e celulares.
+
+   1. COMO FUNCIONAM OS NÚMEROS (Escala de 0 a 255):
+      Cada canal de cor aceita um valor de 0 (desligado) a 255 (intensidade máxima).
+
+      - rgb(255, 0, 0)   -> Apenas Vermelho no máximo = VERMELHO PURA.
+      - rgb(0, 255, 0)   -> Apenas Verde no máximo = VERDE PURA.
+      - rgb(0, 0, 255)   -> Apenas Azul no máximo = AZUL PURA.
+      - rgb(0, 0, 0)     -> Nenhuma luz ativa = PRETO.
+      - rgb(255, 255, 255)-> Todas as luzes no máximo = BRANCO.
+
+   2. O CANAL 'A' (ALPHA) - TRANSPARÊNCIA (rgba):
+      O 'a' do 'rgba' adiciona uma quarta camada para controlar a opacidade, 
+      variando de 0 (totalmente invisível) a 1 (100% opaco).
+
+      EXEMPLO DE SOMBRA: rgba(6, 6, 6, 0.5)
+      - 6, 6, 6 : Tom cinza bem escuro (quase preto).
+      - 0.5     : 50% de opacidade/transparência.
+
+      OUTROS EXEMPLOS DE OPACIDADE:
+      - rgba(0, 0, 0, 0.1) -> Sombra leve (10% de opacidade).
+      - rgba(0, 0, 0, 0.8) -> Sombra escura (80% de opacidade).
+   ========================================================================== */

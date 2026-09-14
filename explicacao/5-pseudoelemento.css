@@ -1,0 +1,46 @@
+/* ==========================================================================
+   ENTENDENDO O PSEUDO-ELEMENTO ::placeholder NO CSS
+   ==========================================================================
+   SINTAXE: input::placeholder { PROPRIEDADE: VALOR; }
+   EXEMPLO: 
+   input::placeholder {
+       color: #94a3b8;
+       font-style: italic;
+   }
+
+   O pseudo-elemento '::placeholder' (com DOIS pontos duplos) permite estilizar 
+   exclusivamente o TEXTO DE DICA TEMPORÁRIO que aparece dentro de um <input> 
+   ou <textarea> antes do usuário digitar algo.
+
+   1. PROPRIEDADES MAIS COMUNS DE ESTILIZAÇÃO:
+      - color      : Altera a cor do texto de dica (ex: #94a3b8, cinza suave).
+      - font-style : Define o estilo da fonte (ex: italic para diferenciar do texto digitado).
+      - font-size  : Ajusta o tamanho da letra do placeholder.
+      - opacity    : Controla a transparência do texto (importante no Firefox, 
+                     que aplica opacidade reduzida por padrão).
+
+   2. REGRA DE OURO (SINTAXE):
+      - Usa-se dois pontos duplos (::) por se tratar de um PSEUDO-ELEMENTO 
+        (uma parte específica dentro da estrutura da tag), diferente de uma 
+        pseudo-classe como o :hover (que usa apenas um ponto : ).
+
+   3. COMPORTAMENTO NO NAVEGADOR:
+      Assim que o usuário clica no campo e começa a digitar qualquer caractere, 
+      a estilização do ::placeholder some automaticamente e o texto digitado 
+      passa a seguir a estilização padrão do <input>.
+   ========================================================================== */
+   
+/* 1. Modificando o PSEUDOELEMENTO (usa ::) */
+/* Altera o estilo do texto do placeholder enquanto o campo está vazio */
+input::placeholder {
+  color: #94a3b8;       /* Cinza claro */
+  font-style: italic;   /* Texto em itálico */
+  opacity: 1;           /* Garante que a cor apareça forte no Firefox */
+}
+
+/* 2. Modificando a PSEUDOCLASSE (usa :) */
+/* Altera o comportamento do elemento inteiro quando ele recebe o foco (clique) */
+input:focus {
+  border: 2px solid #3b82f6; /* Borda azul */
+  outline: none;             /* Remove a linha padrão do navegador */
+}

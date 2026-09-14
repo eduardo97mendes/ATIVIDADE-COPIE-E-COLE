@@ -1,0 +1,31 @@
+/* ==========================================================================
+   ENTENDENDO TIPOS DE BOTÕES EM FORMULÁRIOS (<button type="...">)
+   ==========================================================================
+   SINTAXE: <button type="submit | reset | button">
+   EXEMPLOS:
+   <button type="submit" class="btn-enviar">Enviar Cadastro</button>
+   <button type="reset" class="btn-limpar">Limpar Campos</button>
+
+   O atributo 'type' define qual ação O NAVEGADOR deve executar automaticamente 
+   ao clicar no botão dentro de um <form>:
+
+   1. type="submit" (Botão de Envio):
+      - Dispara o envio dos dados preenchidos para o endereço definido na 
+        tag <form action="...">.
+      - Valida automaticamente todos os campos com 'required' ou formatos 
+        inválidos (como e-mails incorretos) antes de enviar.
+      - É a opção padrão se você não declarar o atributo 'type'.
+
+   2. type="reset" (Botão de Limpeza):
+      - Apaga todos os textos digitados e restaura o formulário inteiro para 
+        o seu ESTADO INICIAL de carregamento.
+      - Restaura marcações de radio/checkbox que vieram com 'checked' de fábrica.
+
+   3. type="button" (Botão Neutro / Genérico):
+      - Não faz NADA por padrão (não envia e não limpa o formulário).
+      - Usado exclusivamente quando queremos programar ações personalizadas 
+        usando JavaScript (como abrir um modal ou validar via código).
+
+   REGRA DE OURO: Dentro de formulários, SEMPRE especifique o 'type' dos botões! 
+   Se esqueceu o 'type', o navegador tratará o botão como 'submit' por padrão.
+   ========================================================================== */

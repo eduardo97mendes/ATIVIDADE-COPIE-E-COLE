@@ -1,0 +1,199 @@
+/* ==========================================================================
+   EXERCÍCIO DE PERSONALIZAÇÃO CSS - MÓDULO 02
+   Instruções: Substitua todos os '___' escolhendo um valor dos comentários!
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   1. CONFIGURAÇÃO GERAL DA PÁGINA (body)
+   -------------------------------------------------------------------------- */
+body {
+    /* OPÇÕES DE FONTE: Arial, sans-serif | 'Courier New', monospace | Verdana, sans-serif */
+    font-family: ___;
+
+    /* OPÇÕES DE COR DE FUNDO:
+       - #f0f4f8 (Azul Tech) | #f3e8ff (Roxo Gamer) | #f0fdf4 (Verde) | #0f172a (Dark)
+    */
+    background-color: ___;
+
+    /* ESPAÇAMENTO INTERNO: 10px | 20px | 30px | 40px */
+    padding: ___;
+}
+
+
+/* --------------------------------------------------------------------------
+   2. CAIXA CONTAINER DO FORMULÁRIO (.formulario-box)
+   -------------------------------------------------------------------------- */
+.formulario-box {
+    /* COR DE FUNDO DA CAIXA: #ffffff (Branco) | #1e293b (Escuro) */
+    background-color: ___;
+
+    /* LARGURA MÁXIMA DA CAIXA: 400px | 500px | 600px */
+    max-width: ___;
+
+    margin: 0 auto;
+    padding: 25px;
+
+    /* ARREDONDAMENTO DAS BORDAS: 0px (quadrado) | 8px (suave) | 16px (arredondado) */
+    border-radius: ___;
+
+    /* SOMBRA DA CAIXA: 0 4px 10px rgba(0, 0, 0, 0.1) | none (sem sombra) */
+    box-shadow: ___;
+}
+
+
+/* --------------------------------------------------------------------------
+   3. ESTILIZANDO POR CLASS (.titulo-principal, .subtitulo-secao e .rotulo)
+   -------------------------------------------------------------------------- */
+.titulo-principal {
+    /* OPÇÕES DE COR DO TÍTULO PRINCIPAL:
+       - #2563eb (Azul) | #7c3aed (Roxo) | #16a34a (Verde) | #ea580c (Laranja)
+    */
+    color: ___;
+
+    /* PREENCHIMENTO DA BORDA INFERIOR [Largura] [Estilo] [Cor]:
+       - Estilos: solid (maciço) | dashed (tracejado) | dotted (pontilhado)
+       - Exemplo: 3px solid #2563eb ou 2px dashed #7c3aed
+    */
+    border-bottom: ___;
+
+    padding-bottom: 8px;
+    margin-bottom: 20px;
+}
+
+.subtitulo-secao {
+    /* COR DO SUBTÍTULO DE CADA SEÇÃO: #475569 | #6b21a8 | #0d9488 */
+    color: ___;
+
+    /* TAMANHO DA FONTE: 16px | 18px | 20px */
+    font-size: ___;
+
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.rotulo {
+    /* PESO DA FONTE: normal | bold (negrito) */
+    font-weight: ___;
+
+    /* COR DO TEXTO: #1e293b (Escuro) | #ffffff (Branco para modo dark) */
+    color: ___;
+
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+
+/* --------------------------------------------------------------------------
+   4. ESTILIZANDO POR ID (#campo-nome e #campo-matricula)
+   -------------------------------------------------------------------------- */
+#campo-nome {
+    /* DESTAQUE DO CAMPO NOME [Largura] [Estilo] [Cor]:
+       - Exemplo: 2px solid #2563eb | 2px solid #7c3aed
+    */
+    border: ___;
+}
+
+#campo-matricula {
+    /* COR DE FUNDO DO CAMPO BLOQUEADO: #e2e8f0 (Cinza claro) | #cbd5e1 */
+    background-color: ___;
+}
+
+
+/* --------------------------------------------------------------------------
+   5. CAMPOS DE ENTRADA (input[type="text"], input[type="email"], input[type="password"])
+   -------------------------------------------------------------------------- */
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    /* LARGURA DO CAMPO: 100% | 280px | 350px */
+    width: ___;
+
+    /* ESPAÇAMENTO INTERNO: 8px | 12px | 15px */
+    padding: ___;
+
+    /* BORDA PADRÃO: 1px solid #cbd5e1 | 2px solid #94a3b8 */
+    border: ___;
+
+    /* CANTOS ARREDONDADOS: 0px | 6px | 12px */
+    border-radius: ___;
+
+    box-sizing: border-box;
+}
+
+
+/* --------------------------------------------------------------------------
+   6. ESTILIZANDO O PLACEHOLDER (input::placeholder)
+   -------------------------------------------------------------------------- */
+input::placeholder {
+    /* COR DO TEXTO DE DICA: #94a3b8 (Cinza) | #a855f7 (Roxo) | #38bdf8 (Azul) */
+    color: ___;
+
+    /* ESTILO DA FONTE: italic (itálico) | normal */
+    font-style: ___;
+}
+
+
+/* --------------------------------------------------------------------------
+   7. ATRIBUTOS BOOLEANOS (required e disabled)
+   -------------------------------------------------------------------------- */
+
+/* ATRIBUTO BOOLEANO [required] - CAMPO OBRIGATÓRIO */
+input[required] {
+    /* Borda esquerda de destaque:
+       - 4px solid #ef4444 (Vermelho) | 4px solid #f97316 (Laranja)
+    */
+    border-left: ___;
+}
+
+/* ATRIBUTO BOOLEANO [disabled] - CAMPO BLOQUEADO */
+input[disabled] {
+    /* CURSOR DO MOUSE: not-allowed (proibido) | default (padrão) */
+    cursor: ___;
+
+    /* OPACIDADE/TRANSPARÊNCIA: 0.8 | 0.5 (médio) | 0.2 (muito transparente) */
+    opacity: ___;
+}
+
+
+/* --------------------------------------------------------------------------
+   8. BOTÕES (.btn-enviar e .btn-limpar)
+   -------------------------------------------------------------------------- */
+.grupo-botoes {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+button {
+    flex: 1;
+    padding: 12px 20px;
+
+    /* REMOVER BORDA PADRÃO: none */
+    border: ___;
+
+    /* ARREDONDAMENTO DO BOTÃO: 6px (suave) | 25px (pílula) */
+    border-radius: ___;
+
+    font-weight: bold;
+
+    /* CURSOR DO MOUSE: pointer (mãozinha) */
+    cursor: ___;
+}
+
+/* BOTÃO DE ENVIAR */
+.btn-enviar {
+    /* COR DO BOTÃO: #2563eb (Azul) | #16a34a (Verde) | #7c3aed (Roxo) */
+    background-color: ___;
+
+    /* COR DO TEXTO: #ffffff (Branco) */
+    color: ___;
+}
+
+/* BOTÃO DE LIMPAR */
+.btn-limpar {
+    /* COR DO BOTÃO NEUTRO: #e2e8f0 (Cinza) */
+    background-color: ___;
+
+    /* COR DO TEXTO: #475569 */
+    color: ___;
+}

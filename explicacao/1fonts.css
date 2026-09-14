@@ -1,0 +1,32 @@
+/* ==========================================================================
+   ENTENDENDO O 'FALLBACK' DE FONTES NO CSS (font-family)
+   ==========================================================================
+   1. POR QUE USAMOS MAIS DE UMA FONTE?
+   Para uma fonte funcionar via CSS puro, ela PRECISA estar instalada no 
+   Sistema Operacional (Windows, Mac, Android, Linux) do usuário. Como cada 
+   sistema vem com fontes diferentes de fábrica, o CSS lê a lista da esquerda 
+   para a direita em ordem de prioridade.
+
+   2. EXEMPLO PRÁTICO NA VIDA REAL:
+   Se você definir: font-family: 'Segoe UI', sans-serif;
+   - No Windows: O navegador encontra a fonte 'Segoe UI' e a exibe.
+   - No iPhone/Mac (Apple): A 'Segoe UI' NÃO existe. O navegador pula para 
+     a 2ª opção ('sans-serif') e usa a fonte padrão da Apple ('San Francisco').
+
+   3. O QUE ACONTECE SE VOCÊ COLOCAR APENAS UMA FONTE?
+   Se você definir apenas: font-family: 'Segoe UI'; (sem o 'sans-serif' no final)
+   - No Windows: Funciona normalmente.
+   - No Mac/Android/Linux: Como a fonte não existe e você não deu uma alternativa, 
+     o navegador é forçado a usar a FONTE PADRÃO DO SISTEMA (que costuma ser 
+     Times New Roman, uma fonte com serifa/pézinhos). Isso 'quebra' o visual 
+     moderno que você planejou!
+
+   4. FONTES NATIVAS DE CADA SISTEMA:
+   - Windows: Segoe UI, Calibri, Tahoma
+   - macOS / iOS: San Francisco, Helvetica
+   - Android: Roboto
+   - Linux: Ubuntu
+
+   REGRA DE OURO: Sempre defina a família genérica no final (sans-serif, serif 
+   ou monospace) para manter o estilo visual em qualquer dispositivo!
+   ========================================================================== */

@@ -1,0 +1,25 @@
+/* ==========================================================================
+   ENTENDENDO A PROPRIEDADE BORDER NO CSS (Contornos e Bordas)
+   ==========================================================================
+   SINTAXE: border: [ESPESSURA] [ESTILO] [COR];
+   EXEMPLO: border: 2px solid #0b2355;
+
+   A propriedade 'border' cria uma linha ao redor dos 4 LADOS de um elemento.
+
+   1. LARGURA / ESPESSURA (border-width):
+      - Define a espessura da linha em pixels (ex: 1px, 2px, 5px).
+
+   2. ESTILO DA LINHA (border-style):
+      - solid  : Linha contínua e reta (o estilo mais usado).
+      - dashed : Linha tracejada (---).
+      - dotted : Linha pontilhada (...).
+      - double : Linha dupla (precisa de pelo menos 3px para aparecer bem).
+      - none   : Remove a borda.
+
+   3. APLICAÇÃO EM LADOS ESPECÍFICOS:
+      Você pode aplicar a borda em apenas um dos lados da caixa:
+      - border-top    : Aplica borda apenas no TOPO.
+      - border-right  : Aplica borda apenas na DIREITA.
+      - border-bottom : Aplica borda apenas na parte INFERIOR (sublinhado).
+      - border-left   : Aplica borda apenas na ESQUERDA (ótimo para destaques).
+   ========================================================================== */

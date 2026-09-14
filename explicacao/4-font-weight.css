@@ -1,0 +1,24 @@
+/* ==========================================================================
+   ENTENDENDO A PROPRIEDADE FONT-WEIGHT NO CSS (Espessura da Fonte)
+   ==========================================================================
+   SINTAXE: font-weight: VALOR;
+   EXEMPLO: font-weight: bold;
+
+   A propriedade 'font-weight' controla o PESO ou a ESPESSURA dos caracteres 
+   do texto (deixando a letra mais fina ou mais encorpada/negrito).
+
+   1. PALAVRAS-CHAVE PRINCIPAIS:
+      - normal : Texto com espessura padrão (padrão do navegador).
+      - bold   : Texto em NEGRITO (espessura encorpada).
+
+   2. VALORES NUMÉRICOS (De 100 a 900 - Escala de Intensidade):
+      Em vez de palavras, você também pode usar números múltiplos de 100:
+      - 100 a 300 : Thin / Light (Texto bem fino)
+      - 400       : Normal (Equivalente à palavra-chave 'normal')
+      - 500 a 600 : Medium / Semi-Bold (Intermediário)
+      - 700       : Bold (Equivalente à palavra-chave 'bold')
+      - 800 a 900 : Extra-Bold / Black (Negrito super pesado)
+
+   NOTA: Para usar os valores numéricos (como 300 ou 900), o arquivo de fonte 
+   carregado na página precisa dar suporte a esses pesos específicos!
+   ========================================================================== */
