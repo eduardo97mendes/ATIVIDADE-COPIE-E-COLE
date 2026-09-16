@@ -12,6 +12,10 @@ body {
 
     /* OPÇÕES DE COR DE FUNDO:
        - #f0f4f8 (Azul Tech) | #f3e8ff (Roxo Gamer) | #f0fdf4 (Verde) | #0f172a (Dark)
+
+       ⚠️ Lembre-se: se escolher #0f172a (Dark) aqui, volte lá no HTML
+       e escolha #2563eb ou #7c3aed na cor do parágrafo de instrução
+       (não use #333333, pois ficaria escuro sobre escuro).
     */
     background-color: ___;
 
@@ -24,7 +28,11 @@ body {
    2. CAIXA CONTAINER DO FORMULÁRIO (.formulario-box)
    -------------------------------------------------------------------------- */
 .formulario-box {
-    /* COR DE FUNDO DA CAIXA: #ffffff (Branco) | #1e293b (Escuro) */
+    /* COR DE FUNDO DA CAIXA: #ffffff (Branco) | #1e293b (Escuro)
+
+       ⚠️ Essa escolha afeta a legibilidade dos itens 3 (.rotulo) e
+       (.subtitulo-secao) logo abaixo. Guarde qual cor escolheu aqui!
+    */
     background-color: ___;
 
     /* LARGURA MÁXIMA DA CAIXA: 400px | 500px | 600px */
@@ -61,7 +69,14 @@ body {
 }
 
 .subtitulo-secao {
-    /* COR DO SUBTÍTULO DE CADA SEÇÃO: #475569 | #6b21a8 | #0d9488 */
+    /* COR DO SUBTÍTULO DE CADA SEÇÃO: #475569 | #6b21a8 | #0d9488
+
+       ⚠️ DICA DE CONTRASTE: essas 3 opções são cores escuras, feitas para
+       um fundo claro. Se você escolheu #1e293b (Escuro) no
+       'background-color' da .formulario-box acima, essas cores ficarão
+       de difícil leitura (escuro sobre escuro). Nesse caso, use uma cor
+       clara aqui, por exemplo #f1f5f9 ou #ffffff.
+    */
     color: ___;
 
     /* TAMANHO DA FONTE: 16px | 18px | 20px */
@@ -75,7 +90,14 @@ body {
     /* PESO DA FONTE: normal | bold (negrito) */
     font-weight: ___;
 
-    /* COR DO TEXTO: #1e293b (Escuro) | #ffffff (Branco para modo dark) */
+    /* COR DO TEXTO: #1e293b (Escuro) | #ffffff (Branco para modo dark)
+
+       ⚠️ DICA DE CONTRASTE: escolha essa cor de acordo com o
+       'background-color' da .formulario-box (item 2 acima). Se a caixa
+       for #ffffff (Branco), use #1e293b aqui. Se a caixa for #1e293b
+       (Escuro), use #ffffff aqui. Combinar as duas cores claras (ou as
+       duas escuras) deixa o texto praticamente invisível.
+    */
     color: ___;
 
     display: inline-block;
