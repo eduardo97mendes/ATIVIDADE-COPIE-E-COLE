@@ -1,0 +1,159 @@
+/*
+  ============================================================
+  O QUE A GENTE VAI CRIAR AQUI?
+  A cara do site: cores, espaços, cartões e formulário.
+
+  Os HTMLs já puxam este arquivo com:
+    <link rel="stylesheet" href="style.css">
+
+  Embaixo tem uma parte JÁ PRONTA (fundo, cabeçalho, caixa de
+  explicação) para o site não ficar feio. O seu trabalho são
+  os 3 passos: cartão, preço/hover e layout.
+  ============================================================
+*/
+
+/* --- Parte já pronta. Pode deixar como está. --- */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Georgia, "Times New Roman", serif;
+    background: #fff8f3;
+    color: #2b2118;
+    line-height: 1.5;
+}
+
+header,
+footer {
+    background: #c44512;
+    color: #fff;
+    text-align: center;
+    padding: 1.25rem;
+}
+
+header h1 {
+    margin: 0 0 0.25rem;
+}
+
+header p {
+    margin: 0 0 0.75rem;
+}
+
+nav a {
+    color: #fff;
+    margin: 0 0.5rem;
+}
+
+main {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 1.5rem;
+}
+
+footer {
+    font-size: 0.9rem;
+}
+
+/* Caixa laranja clara das explicações na tela */
+.guia {
+    background: #fff3e8;
+    border: 1px solid #edcbb8;
+    border-radius: 12px;
+    padding: 1rem 1.2rem;
+    margin-bottom: 1.25rem;
+}
+
+.guia h2 {
+    margin-top: 0;
+    color: #c44512;
+}
+
+.guia pre {
+    background: #2b2118;
+    color: #fff8f3;
+    padding: 0.75rem 1rem;
+    border-radius: 8px;
+    overflow: auto;
+}
+
+/* =========================================================
+   PASSO 1 — EXEMPLO PRONTO: o cartão do produto
+
+   O que a gente fez: o visual da caixinha branca (.card).
+   Serve para TODOS os produtos (pizza, hambúrguer, etc.).
+   Você não precisa repetir .card para cada um.
+
+   Em português claro:
+   - background, border, border-radius → fundo, borda e canto arredondado
+   - padding → espaço interno
+   - box-shadow → uma sombra leve
+   - .card h3 → o título na cor laranja do site
+   - .emoji → o ícone maior
+   ========================================================= */
+.card {
+    background: #fff;
+    border: 1px solid #edcbb8;
+    border-radius: 12px;
+    padding: 1rem 1.1rem;
+    box-shadow: 0 2px 8px rgba(196, 69, 18, 0.08);
+}
+
+.card h3 {
+    margin: 0.25rem 0;
+    color: #c44512;
+}
+
+.emoji {
+    font-size: 2rem;
+    margin: 0;
+}
+
+/* =========================================================
+   PASSO 2 — AGORA É COM VOCÊ
+
+   O que você vai criar:
+   1) o visual do PREÇO (.preco)
+   2) o efeito quando o mouse passa no cartão (.card:hover)
+
+   Pode copiar e mudar as cores se quiser:
+
+   .preco {
+       font-weight: bold;
+       font-size: 1.15rem;
+       color: #8a2e0c;
+   }
+
+   .card:hover {
+       transform: translateY(-4px);
+       box-shadow: 0 8px 16px rgba(196, 69, 18, 0.16);
+   }
+
+   Extra (opcional): no .card do passo 1, acrescente
+     transition: transform 0.2s ease, box-shadow 0.2s ease;
+   para o movimento ficar mais suave.
+   ========================================================= */
+/* TODO: estilo de .preco */
+/* TODO: estilo de .card:hover */
+
+/* =========================================================
+   PASSO 3 — DESAFIO
+
+   O que você vai criar: os cartões lado a lado e o visual
+   do formulário.
+
+   Escreva as regras. Sugestão para os cartões:
+
+   .vitrine {
+       display: grid;
+       grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+       gap: 1rem;
+   }
+
+   Depois estilize também:
+   - form, .campo, label, input, select, textarea, button
+     (botão pode ser laranja #c44512)
+   - .erros  → caixa da lista de erros do PHP
+   - .resumo → caixa do pedido confirmado (pode ser verde claro)
+   ========================================================= */

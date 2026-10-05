@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sabor Express — Pedido</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--
+        ============================================================
+        O QUE A GENTE VAI CRIAR AQUI?
+        O FORMULÁRIO: a pessoa preenche os dados e clica em Enviar.
+
+        Aqui é só HTML. Quem recebe os dados é o PHP (processar.php).
+
+        O atributo name="" é o apelido do campo.
+        Se name="telefone", o PHP lê isso em $_POST['telefone'].
+
+        action="processar.php"  → manda os dados para o PHP
+        method="post"           → envia escondido (não aparece na URL)
+        ============================================================
+    -->
+
+    <header>
+        <h1>Sabor Express</h1>
+        <p>Preencha os dados para confirmar o pedido</p>
+        <nav>
+            <a href="comece.html">Comece aqui</a>
+            <a href="index.html">Cardápio</a>
+            <a href="pedido.html">Fazer pedido</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="guia">
+            <h2>Nesta página: o formulário</h2>
+            <p>Aqui você vai criar os <strong>campos do pedido</strong>. O campo Nome já está pronto. Você completa o Telefone. No desafio, crie endereço, quantidade e observações, e acrescente mais produtos no menu.</p>
+        </section>
+
+        <section>
+            <h2>Formulário de pedido</h2>
+            <form action="processar.php" method="post">
+
+                <!-- =========================================================
+                     PASSO 1 — EXEMPLO PRONTO: campo Nome
+
+                     O que a gente fez: uma caixinha para a pessoa escrever o nome.
+
+                     Olha o que cada parte faz:
+                     - <div class="campo">     → junta o texto e a caixinha
+                     - <label for="nome">      → o texto que aparece na tela
+                     - for="nome" combina com id="nome" do input (é o mesmo nome)
+                     - <input name="nome">     → o PHP usa esse name
+                     - required                → o navegador avisa se ficou vazio
+
+                     Os outros campos seguem essa mesma ideia:
+                     label + input + um name.
+                     ========================================================= -->
+                <div class="campo">
+                    <label for="nome">Nome</label>
+                    <input type="text" id="nome" name="nome" required>
+                </div>
+
+                <!-- =========================================================
+                     PASSO 2 — AGORA É COM VOCÊ: campo Telefone
+
+                     O que você vai criar: a caixinha do telefone.
+                     É igual ao Nome, mas id e name são telefone.
+
+                     Modelo:
+                     <input type="tel" id="telefone" name="telefone" required>
+
+                     Se quiser, pode colocar:
+                     placeholder="(11) 99999-0000"
+                     ========================================================= -->
+                <div class="campo">
+                    <label for="telefone">Telefone</label>
+                    <!-- TODO: crie o <input> com id="telefone" e name="telefone" -->
+                </div>
+
+                <!-- =========================================================
+                     PASSO 3 — DESAFIO
+
+                     O que você vai criar: o resto do pedido.
+                     Coloque os novos <div class="campo"> dentro deste <form>.
+
+                     1) Endereço
+                        label + input type="text"
+                        name="endereco"  id="endereco"
+
+                     2) Quantidade
+                        label + input type="number"
+                        name="quantidade"  id="quantidade"  min="1"  value="1"
+
+                     3) Observações (pode ficar vazio)
+                        label + <textarea id="observacoes" name="observacoes" rows="3"></textarea>
+
+                     No <select> lá embaixo, acrescente 3 opções
+                     (o value tem que ser exatamente este):
+                     combo-sushi | acai-bowl | brownie-sorvete
+                     ========================================================= -->
+
+                <div class="campo">
+                    <label for="produto">Produto</label>
+                    <!--
+                        select = menu de opções.
+                        value = código que o PHP recebe.
+                        O texto entre as tags é o que a pessoa lê na tela.
+                    -->
+                    <select id="produto" name="produto" required>
+                        <option value="">— Escolha —</option>
+                        <option value="pizza-margherita">Pizza Margherita (R$ 39,90)</option>
+                        <option value="hamburguer-classico">Hambúrguer Clássico (R$ 32,50)</option>
+                        <!-- TODO (desafio): Combo Sushi, Açaí Bowl e Brownie com Sorvete -->
+                    </select>
+                </div>
+
+                <button type="submit">Enviar pedido</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>Sabor Express — exercício de HTML, CSS e PHP</p>
+    </footer>
+</body>
+</html>

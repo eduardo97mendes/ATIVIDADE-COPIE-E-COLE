@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sabor Express — Cardápio</title>
+    <!-- O visual fica no CSS, separado. Esta linha puxa o arquivo style.css. -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--
+        ============================================================
+        O QUE A GENTE VAI CRIAR AQUI?
+        A página do CARDÁPIO: a pessoa vê o que a loja vende.
+
+        Aqui é só HTML (a estrutura da página).
+        A cor e o formato vêm do style.css.
+
+        Cada produto é um CARTÃO: uma caixinha com emoji,
+        nome, uma frase e o preço.
+
+        Como estudar:
+        1) Leia o exemplo da pizza (já está pronto).
+        2) Complete o hambúrguer (tem dica).
+        3) Crie mais 2 ou 3 cartões sozinho.
+        ============================================================
+    -->
+
+    <header>
+        <h1>Sabor Express</h1>
+        <p>Delivery de lanches, pratos e sobremesas</p>
+        <nav>
+            <a href="comece.html">Comece aqui</a>
+            <a href="index.html">Cardápio</a>
+            <a href="pedido.html">Fazer pedido</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="guia">
+            <h2>Nesta página: o cardápio</h2>
+            <p>Aqui você vai montar os <strong>cartões dos produtos</strong>. Abra o arquivo <code>index.html</code> no editor. O 1.º produto já está pronto e explicado. O 2.º você completa. Depois crie mais 2 ou 3.</p>
+        </section>
+
+        <section>
+            <h2>Nossos produtos</h2>
+            <p>Escolha no cardápio e siga para <a href="pedido.html">Fazer pedido</a>.</p>
+
+            <!-- Esta div junta todos os cartões. No CSS você vai colocá-los lado a lado. -->
+            <div class="vitrine">
+
+                <!-- =========================================================
+                     PASSO 1 — EXEMPLO PRONTO (não precisa mexer)
+
+                     O que a gente fez: um cartão da Pizza Margherita.
+
+                     Olha o que cada tag faz:
+                     - <article class="card">  → a caixinha do produto
+                     - <p class="emoji">🍕</p> → um desenho para ficar mais fácil de achar
+                     - <h3>                    → o nome
+                     - <p>                     → a descrição
+                     - <p class="preco">       → o preço
+
+                     Para os outros produtos, copie essa mesma ordem.
+                     Só mude o texto, o emoji e o valor.
+                     ========================================================= -->
+                <article class="card">
+                    <p class="emoji" aria-hidden="true">🍕</p>
+                    <h3>Pizza Margherita</h3>
+                    <p>Molho de tomate, mussarela e manjericão fresco.</p>
+                    <p class="preco">R$ 39,90</p>
+                </article>
+
+                <!-- =========================================================
+                     PASSO 2 — AGORA É COM VOCÊ (tem dica)
+
+                     O que você vai criar: o cartão do Hambúrguer Clássico.
+                     É igual ao da pizza. Só mudam os textos e o preço.
+
+                     Modelo (pode copiar e completar):
+                     <article class="card">
+                         <p class="emoji">🍔</p>
+                         <h3>Hambúrguer Clássico</h3>
+                         <p>Escreva uma descrição curta.</p>
+                         <p class="preco">R$ 32,50</p>
+                     </article>
+                     ========================================================= -->
+                <article class="card">
+                    <p class="emoji" aria-hidden="true">🍔</p>
+                    <!-- TODO: coloque o nome aqui, por exemplo: Hambúrguer Clássico -->
+                    <h3></h3>
+                    <!-- TODO: escreva um <p> com a descrição (pão, carne, queijo...) -->
+                    <!-- TODO: coloque o preço: <p class="preco">R$ 32,50</p> -->
+                </article>
+
+                <!-- =========================================================
+                     PASSO 3 — DESAFIO (você sozinho)
+
+                     O que você vai criar: mais 2 ou 3 cartões, iguais ao da pizza.
+
+                     Ideias e preços (use estes valores, iguais ao menu do pedido):
+                     - Combo Sushi — R$ 48,00
+                     - Açaí Bowl — R$ 24,90
+                     - Brownie com Sorvete — R$ 18,00
+
+                     Escreva os novos <article class="card"> aqui embaixo,
+                     ainda dentro desta caixa "vitrine".
+                     ========================================================= -->
+
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Sabor Express — exercício de HTML, CSS e PHP</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sabor Express — Como fazer o exercício</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Sabor Express</h1>
+        <p>Leia isto antes de mexer no código</p>
+        <nav>
+            <a href="comece.html">Comece aqui</a>
+            <a href="index.html">Cardápio</a>
+            <a href="pedido.html">Fazer pedido</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="guia">
+            <h2>O que a gente vai construir?</h2>
+            <p>Um site de <strong>delivery</strong> (comida em casa) chamado Sabor Express. A pessoa vê os lanches, preenche um pedido e o PHP mostra um resumo na tela.</p>
+            <ol>
+                <li><strong>Cardápio</strong> (<a href="index.html">index.html</a>) — os produtos em cartõezinhos, com nome, descrição e preço.</li>
+                <li><strong>Formulário</strong> (<a href="pedido.html">pedido.html</a>) — nome, telefone, endereço, produto e quantidade.</li>
+                <li><strong>Visual</strong> (<code>style.css</code>) — cores e layout. Já está ligado no HTML com <code>&lt;link rel="stylesheet" href="style.css"&gt;</code>.</li>
+                <li><strong>PHP</strong> — quando a pessoa clica em Enviar, os dados vão para <code>processar.php</code>. As regras (se faltou nome, quanto custa, etc.) ficam em <code>funcoes.php</code>. Você <strong>não</strong> mistura PHP no HTML do cardápio.</li>
+            </ol>
+        </section>
+
+        <section class="guia">
+            <h2>Como fazer (3 passos em cada arquivo)</h2>
+            <p>Abra os arquivos no editor (Cursor, VS Code, etc.). Não dá para completar o exercício só olhando o site no navegador. Os comentários no código explicam o exemplo e o que você precisa escrever.</p>
+            <ol>
+                <li><strong>Exemplo pronto</strong> — já está feito. Leia o comentário “o que a gente fez” e copie a ideia.</li>
+                <li><strong>Com dica</strong> — falta um pedaço. Tem TODO e um modelo de código para você completar.</li>
+                <li><strong>Desafio</strong> — você cria mais 2 ou 3 iguais, sozinho.</li>
+            </ol>
+            <p><strong>Ordem boa para não se perder:</strong> 1) <code>index.html</code> → 2) <code>pedido.html</code> → 3) <code>style.css</code> → 4) <code>funcoes.php</code>.</p>
+            <p><code>processar.php</code> e <code>mensagens.php</code> já estão prontos. Só leia os comentários para entender o caminho: formulário → PHP → resumo na tela.</p>
+        </section>
+
+        <section class="guia">
+            <h2>Como abrir o site</h2>
+            <p>No terminal, entre na pasta <code>aluno</code> e rode:</p>
+            <pre>php -S localhost:8000</pre>
+            <p>Depois abra <a href="index.html">o cardápio</a> e <a href="pedido.html">o pedido</a>. Se o PHP não estiver rodando, o formulário não mostra o resumo.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>Sabor Express — exercício de HTML, CSS e PHP</p>
+    </footer>
+</body>
+</html>
